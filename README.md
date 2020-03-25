@@ -1,4 +1,4 @@
-# A pipeline to repurpose drugs for treating lung injury in COVID19
+# A Pipeline to Repurpose Drugs for Treating Lung Injury in COVID19
 
 ### Step 1
 #### Download L1000 Connectivity Map perturbational profiles GSE70138 and GSE92742 from GEO
@@ -13,7 +13,7 @@
 ### Step 2 
 #### To Generate drug reference panel for lung from GSE70138 and GSE92742
 `Rscript Preparing_reference_lung.R`
-Output files:
+###### Output files:
 ```
 lung_gene_info.txt #Gene information
 lung_drug_info.txt #Drug information
