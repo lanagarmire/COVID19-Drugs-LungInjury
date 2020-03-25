@@ -12,11 +12,11 @@
 ### Step 2: Generating drug reference panel for lung from GSE70138 and GSE92742
 `Rscript Preparing_reference_lung.R`
 #### Output files:
-、、、
+```
 lung_gene_info.txt #Gene information
 lung_drug_info.txt #Drug information
 lung_rankMatrix.txt #Gene rank list in lung cells with drug treatment
-、、、
+```
 
 ### Step 3: Extracting differential expression profiles of genes from lung cells with inhibition of ACE2
 `Rscript ACE2_inhibition_Data.R`
