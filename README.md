@@ -13,9 +13,9 @@
 `Rscript Preparing_reference_lung.R`
 ##### Output files:
 ```
-lung_gene_info.txt >Gene information
-lung_drug_info.txt >Drug information
-lung_rankMatrix.txt >Gene rank list in lung cells with drug treatment
+lung_gene_info.txt #Gene information
+lung_drug_info.txt #Drug information
+lung_rankMatrix.txt #Gene rank list in lung cells with drug treatment
 ```
 
 ### Step 3: Extracting differential expression profiles of genes from lung cells with inhibition of ACE2
