@@ -11,9 +11,9 @@
 [GSE92742_Broad_LINCS_sig_info.txt](https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/GSE92742_Broad_LINCS_sig_info.txt.gz)
 
 ### Step 2 
-#### Generate drug reference panel for lung from GSE70138 and GSE92742
+To Generate drug reference panel for lung from GSE70138 and GSE92742
 `Rscript Preparing_reference_lung.R`
-##### Output files:
+Output files:
 ```
 lung_gene_info.txt #Gene information
 lung_drug_info.txt #Drug information
@@ -21,9 +21,9 @@ lung_rankMatrix.txt #Gene rank list in lung cells with drug treatment
 ```
 
 ### Step 3 
-#### Extract differential expression profiles of genes from lung cells with inhibition of ACE2
+To Extract differential expression profiles of genes from lung cells with inhibition of ACE2
 `Rscript ACE2_inhibition_Data.R`
-##### Output files:
+Output files:
 ```
 A549_6_data_for_drug.csv #Differential expression of genes in A549 cell at 6 h after transfection of ACE2 inhibitor
 A549_24_data_for_drug.csv #Differential expression of genes in A549 cell at 24 h after transfection of ACE2 inhibitor 
@@ -32,9 +32,9 @@ HCC515_24_data_for_drug.csv #Differential expression of genes in HCC515 cell at 
 ```
 
 ### Step 4 
-#### Drug reposition analysis
+Drug reposition analysis
 `Rscript Drug_reposition.R`
-##### Output files:
+Output files:
 ```
 A549_6_drug.csv #Drugs for A549 cell at 6 h after transfection of ACE2 inhibitor
 A549_24_drug.csv #Drugs for A549 cell at 24 h after transfection of ACE2 inhibitor 
