@@ -1,0 +1,30 @@
+# COVID19-Drugs-LungInjury
+
+This is a pipeline to repurpose drugs for treating lung injury in COVID19
+
+Step 1: Download L1000 Connectivity Map perturbational profiles GSE70138 and GSE92742 from GEO
+https://ftp.ncbi.nlm.nih.gov/geo/series/GSE70nnn/GSE70138/suppl/GSE70138_Broad_LINCS_cell_info_2017-04-28.txt.gz
+https://ftp.ncbi.nlm.nih.gov/geo/series/GSE70nnn/GSE70138/suppl/GSE70138_Broad_LINCS_Level5_COMPZ_n118050x12328_2017-03-06.gctx.gz
+https://ftp.ncbi.nlm.nih.gov/geo/series/GSE70nnn/GSE70138/suppl/GSE70138_Broad_LINCS_sig_info_2017-03-06.txt.gz
+https://ftp.ncbi.nlm.nih.gov/geo/series/GSE70nnn/GSE70138/suppl/GSE70138_Broad_LINCS_gene_info_2017-03-06.txt.gz
+https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/GSE92742_Broad_LINCS_cell_info.txt.gz
+https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/GSE92742_Broad_LINCS_Level5_COMPZ.MODZ_n473647x12328.gctx.gz
+https://ftp.ncbi.nlm.nih.gov/geo/series/GSE92nnn/GSE92742/suppl/GSE92742_Broad_LINCS_sig_info.txt.gz
+
+Step 2: Generating drug reference panel for lung from GSE70138 and GSE92742
+Rscript Preparing_reference_lung.R
+Output files:
+lung_gene_info.txt #Gene information
+lung_drug_info.txt #Drug information
+lung_rankMatrix.txt #Gene rank list in lung cells with drug treatment
+
+Step 3: Extracting differential expression profiles of genes from lung cells with inhibition of ACE2
+Rscript ACE2_inhibition_Data.R
+Output files:
+A549_6_data_for_drug.csv #Differential expression of genes in A549 cell at 24 h after transfection of ACE2 inhibitor
+A549_24_data_for_drug.csv #Differential expression of genes in A549 cell at 24 h after transfection of ACE2 inhibitor 
+A549_6_data_for_drug.csv #Differential expression of genes in A549 cell at 24 h after transfection of ACE2 inhibitor
+A549_24_data_for_drug.csv #Differential expression of genes in A549 cell at 24 h after transfection of ACE2 inhibitor
+
+Step 4: Drug reposition analysis
+Rscript Drug_reposition.R
