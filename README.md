@@ -30,6 +30,7 @@ HCC515_24_data_for_drug.csv #Differential expression of genes in HCC515 cell at 
 
 ### Step 4: Drug reposition analysis
 `Rscript Drug_reposition.R`
+##### Output files:
 ```
 A549_6_drug.csv #Drugs for A549 cell at 6 h after transfection of ACE2 inhibitor
 A549_24_drug.csv #Drugs for A549 cell at 24 h after transfection of ACE2 inhibitor 
