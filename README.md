@@ -11,7 +11,7 @@
 
 ### Step 2: Generating drug reference panel for lung from GSE70138 and GSE92742
 `Rscript Preparing_reference_lung.R`
-#### Output files:
+##### Output files:
 ```
 lung_gene_info.txt #Gene information
 lung_drug_info.txt #Drug information
@@ -20,11 +20,13 @@ lung_rankMatrix.txt #Gene rank list in lung cells with drug treatment
 
 ### Step 3: Extracting differential expression profiles of genes from lung cells with inhibition of ACE2
 `Rscript ACE2_inhibition_Data.R`
-#### Output files:
+##### Output files:
+```
 A549_6_data_for_drug.csv #Differential expression of genes in A549 cell at 24 h after transfection of ACE2 inhibitor
 A549_24_data_for_drug.csv #Differential expression of genes in A549 cell at 24 h after transfection of ACE2 inhibitor 
 A549_6_data_for_drug.csv #Differential expression of genes in A549 cell at 24 h after transfection of ACE2 inhibitor
 A549_24_data_for_drug.csv #Differential expression of genes in A549 cell at 24 h after transfection of ACE2 inhibitor
+```
 
 ### Step 4: Drug reposition analysis
 `Rscript Drug_reposition.R`
