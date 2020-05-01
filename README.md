@@ -31,19 +31,20 @@ lung_rankMatrix.txt #Gene rank list in lung cells with drug treatment
 `Rscript ACE2_inhibition_Data.R`
 ###### Output files:
 ```
-A549_6_data_for_drug.csv #Differential expression of genes in A549 cell at 6 h after transfection of ACE2 inhibitor
-A549_24_data_for_drug.csv #Differential expression of genes in A549 cell at 24 h after transfection of ACE2 inhibitor 
 HCC515_6_data_for_drug.csv #Differential expression of genes in HCC515 cell at 6 h after transfection of ACE2 inhibitor
 HCC515_24_data_for_drug.csv #Differential expression of genes in HCC515 cell at 24 h after transfection of ACE2 inhibitor
 ```
-
+#### Extract differential expression profiles of genes from lung tissues with COVID-19
+`Rscript COVID19-lung.R`
+###### Output files:
+```
+Series15_COVID19Lung_data_for_drug.csv #Differential expression of genes in lung tissues with COVID-19
+```
 ### Step 4 
 #### Drug reposition analysis
 `Rscript Drug_reposition.R`
 ###### Output files:
 ```
-A549_6_drug.csv #Drugs for A549 cell at 6 h after transfection of ACE2 inhibitor
-A549_24_drug.csv #Drugs for A549 cell at 24 h after transfection of ACE2 inhibitor 
 HCC515_6_drug.csv #Drugs for HCC515 cell at 6 h after transfection of ACE2 inhibitor
 HCC515_24_drug.csv #Drugs for HCC515 cell at 24 h after transfection of ACE2 inhibitor
 ```
