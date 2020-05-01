@@ -48,3 +48,7 @@ Series15_COVID19Lung_data_for_drug.csv #Differential expression of genes in lung
 HCC515_6_drug.csv #Drugs for HCC515 cell at 6 h after transfection of ACE2 inhibitor
 HCC515_24_drug.csv #Drugs for HCC515 cell at 24 h after transfection of ACE2 inhibitor
 ```
+### Other 
+#### Differential gene expressions in response to treatment of COL-3 or CGP-60474 
+`Rscript COL-3_response_Data.R`
+`Rscript CGP-60474_response_Data.R`
