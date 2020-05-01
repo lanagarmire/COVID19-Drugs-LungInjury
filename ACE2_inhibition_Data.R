@@ -4,7 +4,7 @@ col_meta_path <- "GSE92742_Broad_LINCS_sig_info.txt"
 col_meta <- read.delim(col_meta_path, sep="\t", stringsAsFactors=F)
 gene_path <- "Drug_reposition/GSE92742_Broad_LINCS_gene_info.txt"
 gene_meta <- read.delim(gene_path, sep="\t", stringsAsFactors=F)
-cells<-c("HCC515","A549")
+cells<-c("HCC515")
 times<-c("6","24")
 for(cell in cells){
   for(time in times){
