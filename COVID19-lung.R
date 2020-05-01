@@ -10,7 +10,4 @@ data_for_drug<-data.frame(geneSymbol=row.names(res),score=res$stat)
 data_for_drug<-na.omit(data_for_drug)
 row.names(data_for_drug)<-1:nrow(data_for_drug)
 write.csv(data_for_drug,file="Series15_COVID19Lung_data_for_drug.csv",quote = F,row.names = F)
-data_for_drug<-data.frame(geneSymbol=row.names(res),score=res$stat,pval=res$pvalue)
-data_for_drug<-na.omit(data_for_drug)
-row.names(data_for_drug)<-1:nrow(data_for_drug)
-write.csv(data_for_drug,file="Series15_COVID19Lung_gene.csv",quote = F,row.names = F)
+
