@@ -38,7 +38,7 @@ HCC515_24_data_for_drug.csv #Differential expression of genes in HCC515 cell at 
 `Rscript COVID19-lung.R`
 ###### Output files:
 ```
-Series15_COVID19Lung_data_for_drug.csv #Differential expression of genes in lung tissues with COVID-19
+COVID19-Lung_data_for_drug.csv #Differential expression of genes in lung tissues from COVID-19 patients
 ```
 ### Step 4 
 #### Drug reposition analysis
@@ -47,8 +47,14 @@ Series15_COVID19Lung_data_for_drug.csv #Differential expression of genes in lung
 ```
 HCC515_6_drug.csv #Drugs for HCC515 cell at 6 h after transfection of ACE2 inhibitor
 HCC515_24_drug.csv #Drugs for HCC515 cell at 24 h after transfection of ACE2 inhibitor
+COVID19-Lung_drug.csv #Drugs for lung tissuse from COVID-19 patients
 ```
 ### Other 
 #### Differential gene expressions in response to treatment of COL-3 or CGP-60474 
 `Rscript COL-3_response_Data.R` </br>
 `Rscript CGP-60474_response_Data.R`
+###### Output files:
+```
+COL-3_single_treatment_response_data.csv #Differential gene expressions in HCC515 cell at 24h after treatment of COL-3
+CGP-60474_single_treatment_response_data.csv #Differential gene expressions in HCC515 cell at 24h after treatment of CGP-60474
+```
