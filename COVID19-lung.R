@@ -1,3 +1,4 @@
+#Get GSE147507 data from https://ftp.ncbi.nlm.nih.gov/geo/series/GSE147nnn/GSE147507/suppl/GSE147507_RawReadCounts_Human.tsv.gz before running this script.
 library(DESeq2)
 countData <-as.matrix(read.table(file="GSE147507_RawReadCounts_Human.tsv/GSE147507_RawReadCounts_Human.tsv",header=T,row.names = 1,sep="\t"))
 condition <- factor(gsub("_\\d","",colnames(countData)))
